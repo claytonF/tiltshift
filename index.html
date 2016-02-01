@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Make your own tiltshift</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" />
+		<script src="jquery-1.12.0.min.js"></script>
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="container">
+	        <div class="tiltshift">
+				<img src="lisbon-from-above.jpg" width="1000" height="667" />
+	        </div>
+	        <div class="sliders">
+	        	<div>
+		        	<label for="topBlur">Tob blur</label>
+		        	<input id="topBlur" type="range" min="0" max="100" value="15" />
+		        	
+		        	<label for="topTrans">Top blur spread</label>
+		        	<input id="topTrans" type="range" min="0" max="100" value="55" />
+
+		        </div>
+		        <div>
+		        	<label for="bottomTrans">Bottom blur</label>
+		        	<input id="bottomTrans" type="range" min="0" max="100" value="65" />
+		        	<label for="bottomTrans">Bottom blur spread</label>
+		        	<input id="bottomBlur" type="range" min="0" max="100" value="85"  />
+	        	</div>
+	        	<input type="file" id="fileinput" />
+
+	        </div>
+        </div>
+		<script src="script.js"></script>
+
+    </body>
+</html>

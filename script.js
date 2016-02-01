@@ -21,6 +21,7 @@ $(document).on("ready",function(){
 	render(elValues);
 	$el.on("input", function(){
 		var thisEl = this.id;
+		console.log(thisEl);
 		var thisVal = this.value;		
 		for(var key in elValues) {
 			if (key == thisEl) {
@@ -29,6 +30,8 @@ $(document).on("ready",function(){
 			render(elValues);
 		}
 	});
+
+
 
 
 	document.getElementById('fileinput').addEventListener('change', function(){

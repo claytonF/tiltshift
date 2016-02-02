@@ -8,7 +8,13 @@ module.exports = function(grunt){
 
       pkg: grunt.file.readJSON('package.json'),
 
-      
+      // create bootstrap.scss file for sass compile to work 
+      rename: {
+        moveThis: {
+            src: 'node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss',
+            dest: 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss'
+        }
+    },
       // compile sass during watch process
       sass: {
           build: {
@@ -94,7 +100,7 @@ module.exports = function(grunt){
       },
   });
 
-  grunt.registerTask('default', ['sass']);
+  grunt.registerTask('default', ['rename','sass']);
   grunt.registerTask('prefix', ['postcss:dist']);
   grunt.registerTask('minify', ['cssmin']);
   grunt.registerTask('cssStreamline', ['cssc']);

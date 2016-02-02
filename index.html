@@ -9,8 +9,8 @@
         <title>Make your own tiltshift</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet" />
-		<script src="jquery-1.12.0.min.js"></script>
+        <link href="css/style.min.css" rel="stylesheet" />
+		<script src="lib/jquery.min.js"></script>
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
@@ -21,35 +21,42 @@
 
         <!-- Add your site or application content here -->
         <div class="container">
+        	<h1>Create your own tiltshift photos</h1>
 	        <div class="tiltshift">
-				<img src="lisbon-from-above.jpg" width="1000" height="667" />
+				<img src="img/lisbon-from-above.jpg" width="1000" height="667" />
 	        </div>
-	        <div class="sliders">
-	        	<div>
+	        <div class="sliders well">
+	        	<div class="form-group">
 		        	<label for="topBlur">Tob blur</label>
-		        	<input id="topBlur" type="range" min="0" max="100" value="15" />
-		        	
+		        	<input class="form-control" id="topBlur" type="range" min="0" max="100" value="15" />
+		        </div>
+		        <div class="form-group">	
 		        	<label for="topTrans">Top blur spread</label>
-		        	<input id="topTrans" type="range" min="0" max="100" value="55" />
+		        	<input class="form-control" id="topTrans" type="range" min="0" max="100" value="55" />
 
 		        </div>
-		        <div>
+		        <div class="form-group">
 		        	<label for="bottomTrans">Bottom blur</label>
-		        	<input id="bottomTrans" type="range" min="0" max="100" value="65" />
+		        	<input class="form-control" id="bottomTrans" type="range" min="0" max="100" value="65" />
+		        </div>
+		        <div class="form-group">	
 		        	<label for="bottomTrans">Bottom blur spread</label>
-		        	<input id="bottomBlur" type="range" min="0" max="100" value="85"  />
+		        	<input class="form-control" id="bottomBlur" type="range" min="0" max="100" value="85"  />
 	        	</div>
-	        	<div>
+	        	<div class="form-group">
 	        		<label for="blur">Change blur</label>
-	        		<input id="blur" type="range" min="0" max="10" step="1" value="2" />
+	        		<input class="form-control" id="blur" type="range" min="0" max="10" step="1" value="2" />
 	        	</div>
-	        	<div>
+	        	<div class="form-group">
 	        		<label for="bottomTrans">Change background image</label>
-	        		<input type="file" id="fileinput" />
+	        		<input class="form-control" type="url" id="imgsource" />
+	        		
 				</div>
+				<button class="btn btn-info" id="imageChange">Change image</button>
+
 	        </div>
         </div>
-		<script src="script.js"></script>
+		<script src="scripts/script.js"></script>
 
     </body>
 </html>

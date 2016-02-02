@@ -1,0 +1,27 @@
+{
+  "name": "TiltshiftDependencies",
+  "version": "1.0.0",
+  "author": "Clayton Fussell",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "*",
+    "autoprefixer-core": "^5.1.11",
+    "csswring": "*",
+    "grunt": "~0.4.0",
+    "grunt-autoprefixer": "^3.0.0",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-postcss": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-cssc": "*",
+    "grunt-concat-css": "*",
+    "matchdep": "~0.1.2",
+    "jquery": "*",
+    "bootstrap-sass": "*",
+    "grunt-contrib-copy": "^0.8.2"
+  },
+  "devDependencies": {
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-uglify": "^0.11.0"
+  }
+}

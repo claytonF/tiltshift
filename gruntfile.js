@@ -100,7 +100,7 @@ module.exports = function(grunt){
       },
   });
 
-  grunt.registerTask('default', ['rename',' sass','postcss:dist', 'concat_css','cssmin','copy']);
+  grunt.registerTask('init', ['rename',' sass','postcss:dist', 'concat_css','cssmin','copy']);
   grunt.registerTask('watchcss', ['watch']);
   grunt.registerTask('copyFiles', ['copy']);
 };
